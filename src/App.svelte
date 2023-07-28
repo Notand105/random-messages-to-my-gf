@@ -5,18 +5,26 @@
   let randomnumber : number   
   totalmessages.set(messagesData.length)
 
-  console.log(messagesData)
+  let checked: number[] = []
+  fillchecked()
   $: message = messagesData[randomnumber]
 
  //get a random number but not the same as the last one 
   const getRandom = () =>{
     let max = $totalmessages
     let random : number = randomnumber 
-    while(random == randomnumber ){
+    while(random == randomnumber && checked[random] <= 2 ){
       random = Math.floor(Math.random() * (max))
     }
+    checked[random] += 1 
     randomnumber = random
 
+  }
+  
+  function fillchecked(){
+    for(let i = 0; i<$totalmessages; i++){
+      checked[i] = 0
+    }
   }
   
   getRandom()
