@@ -13,7 +13,7 @@
   const getRandom = () =>{
     let max = $totalmessages
     let random : number = randomnumber 
-    while(random == randomnumber && checked[random] <= 2 ){
+    while(random == randomnumber && !(checked[random] <= 2) ){
       random = Math.floor(Math.random() * (max))
     }
     checked[random] += 1 
@@ -24,6 +24,7 @@
   function fillchecked(){
     for(let i = 0; i<$totalmessages; i++){
       checked[i] = 0
+      console.log(checked , checked.length)
     }
   }
   
