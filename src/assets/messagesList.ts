@@ -120,7 +120,7 @@ messagesData = [
     {
      id:23,
      title:'Pelo',
-     description : 'Me encantá tu pelo, siempre consigues que se te vea bonito, aún cuando recien despiertas. Cortito, larguito, ondulado o con chasquilla siempre te ha quedadó bien y siempre te huele muy bien, me encanta tenerlo en mi pechito y perdón por tirartelo todo el tiempo'   
+     description : 'Me encanta tu pelo, siempre consigues que se te vea bonito, aún cuando recien despiertas. Cortito, larguito, ondulado o con chasquilla siempre te ha quedadó bien y siempre te huele muy bien, me encanta tenerlo en mi pechito y perdón por tirartelo todo el tiempo'   
     },
     {
      id:24,
@@ -132,6 +132,31 @@ messagesData = [
      title:'La mejor',
      description : 'Es hermoso cuando decimos lo mismo al mismo tiempo, cuando nos movemos al unisono, que nos riamos por cosas absurdas y que tengamos nuestros propios jueguitos como el pooddle paso, me encanta tu sentido del humor y me gusta poder hacerte reir con el mio, me encanta nuestra relación y me encantas tú, eres simplemente la mejor'   
     },
+    {
+     id:26,
+     title:'Cama',
+     description : 'Que hermoso sentimiento que es estar acostadito contigo, en donde sea, sillón o pastito o camita, el calor que desprendes es tan reconfortante que me quedaría para siempre, ademas me encanta cuando entrelazamos las piernitas, me siento muy cerca a ti y eso me encanta '   
+    },
+    {
+     id:27,
+     title:'Crema',
+     description : 'Postrecito, tortita de galletas, pie de limón, oreos, calzones rotos. Todos esos postrecitos no se comparan con tus dulces y ricos labios amor, me encanta morder tu labio inferior mientras nos besamos, es de lo que más disfruto de nuestros besos '   
+    },
+    {
+     id:28,
+     title:'Verde',
+     description : 'No sabes lo hermoso que es el verde de tus ojos, y aunque no me gusta cuando lloras, el contraste entre ese verde y tus ojitos rojos hace que tus ojos se vean aún más hermosos que de constumbre '   
+    },
+    {
+     id:29,
+     title:'Trolleo hermano tuturutu',
+     description : 'Nada que ver aquí mija, pasele al siguiente <3 '   
+    },
+    {
+     id:30,
+     title:'',
+     description : 'Pase lo que pase, cualquier situación o cualquier cantidad de tiempo, voy a estar ahí para ti corazón, eres una parte escencial de mi vida y pase lo que pase no te dejaria ir'   
+    },   
 ] 
 
 
