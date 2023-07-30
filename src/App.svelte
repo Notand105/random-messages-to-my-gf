@@ -3,6 +3,7 @@
   import { messagesData } from "./assets/messagesList";
 
   let randomnumber : number   
+  let disableBtn : boolean = false
   totalmessages.set(messagesData.length)
 
   let checked: number[] = []
@@ -11,23 +12,34 @@
 
  //get a random number but not the same as the last one 
   const getRandom = () =>{
+    disableBtn = true
     let max = $totalmessages
     let random : number = randomnumber 
-    while(random == randomnumber && !(checked[random] <= 1) ){
+    while(random == randomnumber){
       random = Math.floor(Math.random() * (max))
+      if (checked[random] >= 2 ) randomnumber = random 
     }
-    checked[random] += 1 
+    checked[random] += 1
+    checkFull()
     randomnumber = random
-
+    disableBtn = false
   }
   
   function fillchecked(){
     for(let i = 0; i<$totalmessages; i++){
       checked[i] = 0
-      console.log(checked , checked.length)
     }
   }
-  
+  function checkFull(){
+    let count : number = 0
+    for(let i = 0; i<checked.length; i++){
+      if(checked[i] >= 2){
+        count++
+      }
+    }
+    if(count == checked.length) fillchecked()
+    console.log({count}, checked.length)
+  }
   getRandom()
 
 </script>
@@ -38,7 +50,7 @@
   </header>
   <main class="messages">
       <div class="next">
-        <button class="btn" on:click={getRandom}>Nuevo mensajito</button>
+        <button disabled={disableBtn}  class="btn" on:click={getRandom}>Nuevo mensajito</button>
       </div>
       <div class="mess glass">
         {#if message}
