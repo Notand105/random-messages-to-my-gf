@@ -156,7 +156,12 @@ messagesData = [
      id:30,
      title:'Promesa',
      description : 'Pase lo que pase, cualquier situación o cualquier cantidad de tiempo, voy a estar ahí para ti corazón, eres una parte escencial de mi vida y pase lo que pase no te dejaria ir'   
-    },   
+    },
+    {
+     id: 31,
+     title:'Despedidas',
+     description: 'Lo que más temo cuando estamos juntos es que llegue el momento en el que tengamos que separarnos, es tan complicado el ver como nos alejamos y tu figura se hace cada vez más pequeña con la distancia, es muy dificil estar sin ti, pero tenemos que ser pacientes, ya llegará un momento en el que no tendremos que separarnos nunca más'
+    }
 ] 
 
 
